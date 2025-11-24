@@ -1,6 +1,3 @@
-
-st.title("FFT-based Chord Analyzer")
-st.markdown("### Identify Chords from Audio Signals by Analyzing the Fourier Transform.")
 import streamlit as st
 import numpy as np
 import librosa
@@ -9,6 +6,9 @@ from scipy.fft import fft, fftfreq
 from scipy.signal import find_peaks
 from collections import defaultdict
 import io # Add library for Streamlit file processing.
+
+st.title("FFT-based Chord Analyzer")
+st.markdown("### Identify Chords from Audio Signals by Analyzing the Fourier Transform.")
 
 # --- (1) define function: frequency to MIDI note ---
 def freq_to_midi(frequency):
