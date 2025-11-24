@@ -7,9 +7,6 @@ from scipy.signal import find_peaks
 from collections import defaultdict
 import io # Add library for Streamlit file processing.
 
-st.title("FFT-based Chord Analyzer")
-st.markdown("### Identify Chords from Audio Signals by Analyzing the Fourier Transform.")
-
 # --- (1) define function: frequency to MIDI note ---
 def freq_to_midi(frequency):
    """
@@ -24,7 +21,7 @@ def freq_to_midi(frequency):
 
 # --- (2) Streamlit web page settings ---
 st.set_page_config(layout="wide")
-st.title("FFT-based Automatic Chord Recognition")
+st.title("FFT-based Chord Analyzer")
 st.markdown("### Identify Chords from Audio Signals by Analyzing the Fourier Transform.")
 
 
