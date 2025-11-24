@@ -10,9 +10,6 @@ from scipy.signal import find_peaks
 from collections import defaultdict
 import io # Add library for Streamlit file processing.
 
-st.set_page_config(
-    page_title="FFT-based Chord Analyzer",  
-    layout="wide")
 # --- (1) define function: frequency to MIDI note ---
 def freq_to_midi(frequency):
    """
